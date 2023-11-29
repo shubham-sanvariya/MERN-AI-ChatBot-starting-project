@@ -1,10 +1,4 @@
-import  express  from "express";
-import { config } from "dotenv";
-config();
-const app = express();
-
-// midlewares
-app.use(express.json());
+import app from './app.js';
 
 // connections and listneres
 app.listen(5000,() => console.log("server open"));
